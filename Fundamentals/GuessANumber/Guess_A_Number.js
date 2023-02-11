@@ -10,7 +10,7 @@ function guessANumber() {
     let borderHigh = 100
     
     let recursiveReadLineAsync = () => {
-        readline.question('Guess a number between (0-100): ', number => {
+        readline.question(`Guess a number between (${borderLow}-${borderHigh}): `, number => {
             if(number >= borderLow && number <= borderHigh){
                 if(number > numberToGuess){
                     borderHigh = number
